@@ -1,18 +1,4 @@
-## Getting Started
+# Ahorcado
+El juego de Ahorcado es una aplicación interactiva desarrollada en Java que permite a los usuarios jugar al clásico juego de adivinar palabras. El objetivo del juego es adivinar una palabra secreta letra por letra antes de que se agoten los intentos permitidos. El juego ofrece una interfaz sencilla a través de la consola, mostrando el estado actual de la palabra adivinada, las letras incorrectas y los intentos restantes.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+El sistema se diseñará utilizando el modelo-vista-controlador (MVC) para separar la lógica del juego (modelo), la interfaz de usuario (vista) y el control del flujo del juego (controlador). Además, se implementarán colecciones y mapas para gestionar las letras adivinadas e incorrectas, y se utilizarán estructuras de datos como listas para almacenar palabras posibles.
