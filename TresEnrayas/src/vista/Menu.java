@@ -5,7 +5,10 @@ import java.io.IOException;
 /**
  *
  * @author soledadbarco
+ *
+ * CLASE PARA EL MENÚ E INSTRUCIONES
  */
+
 
 public class Menu {
     private VistaJuego vista;
@@ -13,7 +16,8 @@ public class Menu {
     public Menu(VistaJuego vista) {
         this.vista = vista;
     }
-
+    
+    //MENU:
     public void verMenuPrincipal() throws IOException {
         while (true) {
             vista.verMensaje("--------------------------------------");
@@ -27,18 +31,19 @@ public class Menu {
             int opcion = vista.obtenerEntrada("Elige una opción (1-3): ");
             switch (opcion) {
                 case 1:
-                    verInstrucciones();
+                    verInstrucciones(); //nos enseña las intrucciones
                     break;
                 case 2:
-                    return; // salir del menú para iniciar el juego
+                    return; // salimos del menú para empezar a jugar
                 case 3:
-                    System.exit(0);
+                    System.exit(0); // salimos del juego
                 default:
                     vista.verMensaje("Opción no válida. Inténtalo de nuevo.");
             }
         }
     }
 
+    //INRUCCIONES:
      private void verInstrucciones() {
         vista.verMensaje("Instrucciones del juego:");
         vista.verMensaje(" El juego es para dos jugadores, uno sera X y oto será O ."
