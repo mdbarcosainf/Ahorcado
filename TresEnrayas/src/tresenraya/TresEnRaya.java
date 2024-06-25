@@ -1,7 +1,11 @@
 package tresenraya;
 
-import modelo.TableroJuego;
 import vista.VistaJuego;
+import vista.Menu;
+import controlador.ControladorJuego;
+import modelo.*;
+
+import java.io.IOException;
 
 /**
  *
@@ -15,5 +19,11 @@ public class TresEnRaya{
         menu.verMenuPrincipal();
         
         TableroJuego tablero = new TableroJuego();
+        Jugador[] jugadores = {
+            new Jugador("Jugador 1", 'X'),
+            new Jugador("Jugador 2", 'O')
+        };
+        ControladorJuego controlador = new ControladorJuego(tablero, vista, jugadores);
+        controlador.iniciarJuego();
     }
 }
