@@ -10,6 +10,8 @@ import java.io.IOException;
 /**
  *
  * @author soledadbarco
+ *
+ * CLASE PRINCIPAL PARA INICIAR EL JUEGO
  */
 
 public class TresEnRaya{
