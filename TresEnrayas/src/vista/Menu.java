@@ -24,7 +24,7 @@ public class Menu {
             vista.verMensaje("3. Salir");
             vista.verMensaje("--------------------------------------");
 
-            int opcion = vista.obtenerEntrada("Eligé una opción (1-3): ");
+            int opcion = vista.obtenerEntrada("Elige una opción (1-3): ");
             switch (opcion) {
                 case 1:
                     verInstrucciones();
