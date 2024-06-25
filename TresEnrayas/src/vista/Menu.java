@@ -17,7 +17,7 @@ public class Menu {
     public void verMenuPrincipal() throws IOException {
         while (true) {
             vista.verMensaje("--------------------------------------");
-            vista.verMensaje("Bienvenido al juego de Tres en Raya");
+            vista.verMensaje("      Bienvenido al Tres en Raya");
             vista.verMensaje("--------------------------------------");
             vista.verMensaje("1. Ver Instrucciones");
             vista.verMensaje("2. Jugar");
