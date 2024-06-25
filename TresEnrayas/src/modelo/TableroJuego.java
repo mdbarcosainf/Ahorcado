@@ -73,7 +73,7 @@ public class TableroJuego implements Tablero {
         if (casillas[0][2] == casillas[1][1] && casillas[0][2] == casillas[2][0] && casillas[0][2] != ' ') return true;
         return false;
     }
-
+    /*
     @Override
     public boolean lleno() {
         int i, j;
@@ -82,7 +82,7 @@ public class TableroJuego implements Tablero {
                 if (casillas[i][j] == ' ')
                     return false;
         return true;
-    }
+    }*/
 
     public void registrarVictoria(String nombre) {
         victorias.put(nombre, victorias.getOrDefault(nombre, 0) + 1);
