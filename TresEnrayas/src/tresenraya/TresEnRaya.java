@@ -1,6 +1,8 @@
 package tresenraya;
 
 import modelo.TableroJuego;
+import vista.VistaJuego;
+
 /**
  *
  * @author soledadbarco
@@ -8,7 +10,10 @@ import modelo.TableroJuego;
 
 public class TresEnRaya{
     public static void main(String[] args) throws IOException {
-     
-       TableroJuego tablero = new TableroJuego();
+        VistaJuego vista = new VistaJuego();
+        Menu menu = new Menu(vista);
+        menu.verMenuPrincipal();
+        
+        TableroJuego tablero = new TableroJuego();
     }
 }
