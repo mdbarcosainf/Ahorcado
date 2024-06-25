@@ -1,5 +1,6 @@
 package tresenraya;
 
+import modelo.TableroJuego;
 /**
  *
  * @author soledadbarco
@@ -8,6 +9,6 @@ package tresenraya;
 public class TresEnRaya{
     public static void main(String[] args) throws IOException {
      
-       
+       TableroJuego tablero = new TableroJuego();
     }
 }
