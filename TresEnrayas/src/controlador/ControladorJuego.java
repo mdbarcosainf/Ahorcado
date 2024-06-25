@@ -31,6 +31,24 @@ public class ControladorJuego {
                 Jugador jugador = jugadores[turnoActual];
                 vista.verMensaje("Turno de " + jugador.getNombre());
 
+                int fila, col;
+                boolean movimientoValido;
+                do {
+                    do {
+                        fila = vista.obtenerEntrada("¿En qué fila? (1-3): ") - 1;
+                    } while (fila < 0 || fila >= 3);
+
+                    do {
+                        col = vista.obtenerEntrada("¿En qué columna? (1-3): ") - 1;
+                    } while (col < 0 || col >= 3);
+
+                    Posicion posicion = new Posicion(2);
+                    posicion.setLugar(new int[]{fila, col});
+                    movimientoValido = tablero.poner(posicion, jugador.getPieza());
+                    if (!movimientoValido) {
+                        vista.verMensaje("Ya hay una pieza en esa casilla. Inténtalo de nuevo.");
+                    }
+                } while (!movimientoValido);
              
 
                 if (tablero.tresEnRaya()) {
