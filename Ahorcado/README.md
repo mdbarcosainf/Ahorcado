@@ -1,4 +1,0 @@
-# Ahorcado
-El juego de Ahorcado es una aplicación interactiva desarrollada en Java que permite a los usuarios jugar al clásico juego de adivinar palabras. El objetivo del juego es adivinar una palabra secreta letra por letra antes de que se agoten los intentos permitidos. El juego ofrece una interfaz sencilla a través de la consola, mostrando el estado actual de la palabra adivinada, las letras incorrectas y los intentos restantes.
-
-El sistema se diseñará utilizando el modelo-vista-controlador (MVC) para separar la lógica del juego (modelo), la interfaz de usuario (vista) y el control del flujo del juego (controlador). Además, se implementarán colecciones y mapas para gestionar las letras adivinadas e incorrectas, y se utilizarán estructuras de datos como listas para almacenar palabras posibles.
