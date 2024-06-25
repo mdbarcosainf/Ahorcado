@@ -39,11 +39,11 @@ public class Menu {
         }
     }
 
-    private void verInstrucciones() {
+     private void verInstrucciones() {
         vista.verMensaje("Instrucciones del juego:");
         vista.verMensaje("El juego es para dos jugadores, uno sera X y oto será O ."
                 + "\nLos jugadores se turnarán para colocar sus piezas en el tablero."
-                + "\n El primer jugador en colocar tres de sus marcas en línea (horizontal, vertical o diagonal) ganará la partida."
+                + "\n El primer jugador en colocar tres de sus piezas en línea (horizontal, vertical o diagonal) ganará la partida."
                 + "\n También se podrá hacer empate, si el tablero se llena y nadie ha ganado. ");
     }
 }
