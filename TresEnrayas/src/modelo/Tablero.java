@@ -11,5 +11,5 @@ public interface Tablero {
     void limpiar();
     boolean quitar(Posicion pos, char marca);
     boolean tresEnRaya();
-    boolean lleno();
+    //boolean lleno();
 }
