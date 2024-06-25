@@ -21,9 +21,16 @@ public class VistaJuego {
     
     //Recibe los distintos tipos de entrada:
     //Entrada para los números
+     public int recibeEntrada(String mensaje) throws IOException {
+        verMensaje(mensaje);
+        return Integer.parseInt(lector.readLine());
+    }
     
     //Entrada para el texto
-    
+     public String recibeEntradaTexto(String mensaje) throws IOException {
+        verMensaje(mensaje);
+        return lector.readLine();
+    }
 }
 
 
