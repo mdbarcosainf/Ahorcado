@@ -7,24 +7,23 @@ import java.io.InputStreamReader;
 /**
  *
  * @author soledadbarco
+ *
+ *CLASE PARA LA INTERACCIÓN DEL JUGADOR    
  */
 
 public class VistaJuego {
     private BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
 
+    //Enseña el mensaje
     public void verMensaje(String mensaje) {
         System.out.println(mensaje);
     }
-
-    public int obtenerEntrada(String mensaje) throws IOException {
-        verMensaje(mensaje);
-        return Integer.parseInt(lector.readLine());
-    }
-
-    public String obtenerEntradaTexto(String mensaje) throws IOException {
-        verMensaje(mensaje);
-        return lector.readLine();
-    }
+    
+    //Recibe los distintos tipos de entrada:
+    //Entrada para los números
+    
+    //Entrada para el texto
+    
 }
 
 
